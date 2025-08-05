@@ -13,7 +13,7 @@ interface ActivityFeedProps {
   activities: ActivityItem[];
 }
 
-export const ActivityFeed: React.FC<ActivityFeedProps> = ({ activities }) => {
+const ActivityFeed: React.FC<ActivityFeedProps> = ({ activities }) => {
   const getStatusConfig = (status: string) => {
     switch (status) {
       case 'success':
@@ -111,4 +111,4 @@ export const ActivityFeed: React.FC<ActivityFeedProps> = ({ activities }) => {
       </div>
     </div>
   );
-};
+};export default ActivityFeed;
