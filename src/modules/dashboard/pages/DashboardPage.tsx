@@ -20,7 +20,7 @@ const defaultActivity = [
   { id: 4, action: 'Scraping failed', target: 'Healthcare - NY', time: '2 hours ago', status: 'error' as const },
 ];
 
-export const DashboardPage: React.FC = () => {
+const DashboardPage: React.FC = () => {
   const navigate = useNavigate();
   const [stats, setStats] = useState(defaultStats);
   const [recentActivity, setRecentActivity] = useState(defaultActivity);
