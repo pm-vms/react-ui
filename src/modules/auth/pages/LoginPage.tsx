@@ -40,7 +40,7 @@ const features = [
   },
 ];
 
-export const LoginPage: React.FC = () => {
+const LoginPage: React.FC = () => {
   const [localLoading, setLocalLoading] = useState(false); // ← your own spinner state
   const [error, setError] = useState("");
   const navigate = useNavigate();
