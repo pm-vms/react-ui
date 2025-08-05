@@ -3037,4 +3037,3 @@ const TeamSection = () => {
 };
 
 export default LeadIntelligence;
-export default 1;

@@ -1517,4 +1517,5 @@ export default function LeadFiltersPage() {
     </div>
   )
 }
-export default 1;
+
+export default LeadFiltersPage;
