@@ -5,8 +5,8 @@ import {
   Divider, IconButton, Grid, Stack, Paper
 } from "@mui/material"
 import { Add, Close, Search, Business, Group } from "@mui/icons-material"
-import apiService from "../services/api"
-import { useAuth } from "../contexts/AuthContext";
+import { apiService } from "../../../services/api"
+import { useAuth } from "../../auth/services/AuthContext";
 
 
 
