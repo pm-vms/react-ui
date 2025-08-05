@@ -77,9 +77,9 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/leadui/tooltip";
-import { Textarea } from "@/components/leadui/textarea";
-import { Label } from "@/components/leadui/label";
+} from "../../../shared/components/tooltip";
+import { Textarea } from "../../../shared/components/textarea";
+import { Label } from "../../../shared/components/label";
 import { useAuth } from "../../auth/services/AuthContext";
 import { apiService } from "../../../services/api"; // Assuming apiService is used for API calls
 import {
