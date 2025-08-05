@@ -33,8 +33,8 @@ import {
   Play,
   RotateCcw,
 } from "lucide-react";
-import apiService from "../services/api";
-import { useAuth } from "../contexts/AuthContext";
+import { apiService } from "../../../services/api";
+import { useAuth } from "../../auth/services/AuthContext";
 
 const SettingsPage: React.FC = () => {
   const { user } = useAuth();
