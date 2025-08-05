@@ -49,7 +49,7 @@ import {
   DialogTitle,
   DialogTrigger,
   DialogDescription,
-} from "@/components/leadui/dialog";
+} from "../../../shared/components/dialog";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -1688,7 +1688,7 @@ const LeadDataPage: React.FC = () => {
                               filter: "dateRangeFilter",
                             },
                             {
-                              label: "🔴 Overdue Follow-ups",
+                              label: "�� Overdue Follow-ups",
                               value: "overdue",
                               filter: "followUpDueFilter",
                             },
