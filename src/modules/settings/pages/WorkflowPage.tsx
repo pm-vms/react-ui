@@ -81,7 +81,7 @@ const recentWorkflows = [
   }
 ];
 
-export const WorkflowPage: React.FC = () => {
+const WorkflowPage: React.FC = () => {
   const [selectedWorkflow, setSelectedWorkflow] = useState<number | null>(null);
 
   const getStatusIcon = (status: string) => {
@@ -302,3 +302,4 @@ export const WorkflowPage: React.FC = () => {
     </div>
   );
 };
+export default 1;

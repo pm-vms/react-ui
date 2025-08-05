@@ -36,7 +36,7 @@ import {
 import apiService from "../services/api";
 import { useAuth } from "../contexts/AuthContext";
 
-export const SettingsPage: React.FC = () => {
+const SettingsPage: React.FC = () => {
   const { user } = useAuth();
   const [settings, setSettings] = useState({
     notifications: {
@@ -1286,3 +1286,4 @@ export const SettingsPage: React.FC = () => {
     </div>
   );
 };
+export default 1;
