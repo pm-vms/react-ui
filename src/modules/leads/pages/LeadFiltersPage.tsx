@@ -10,7 +10,7 @@ import { useAuth } from "../contexts/AuthContext";
 
 
 
-export default function LeadFiltersPage() {
+function LeadFiltersPage() {
   const { user } = useAuth();
   const [filters, setFilters] = useState({
     company: [] as string[],
