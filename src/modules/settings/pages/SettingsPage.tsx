@@ -1286,4 +1286,4 @@ const SettingsPage: React.FC = () => {
     </div>
   );
 };
-export default 1;
+export default SettingsPage;
