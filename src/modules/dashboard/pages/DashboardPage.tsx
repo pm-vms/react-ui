@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Users, TrendingUp, Database, Activity, AlertCircle } from 'lucide-react';
-import { StatsCard } from '../components/StatsCard';
+import StatsCard from '../components/StatsCard';
 import ActivityFeed from '../components/ActivityFeed';
-import { QuickActions } from '../components/QuickActions';
+import QuickActions from '../components/QuickActions';
 import { useNavigate } from 'react-router-dom';
 import { apiService } from '../../../services/api';
 
