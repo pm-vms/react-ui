@@ -80,8 +80,8 @@ import {
 } from "@/components/leadui/tooltip";
 import { Textarea } from "@/components/leadui/textarea";
 import { Label } from "@/components/leadui/label";
-import { useAuth } from "../contexts/AuthContext";
-import apiService from "../services/api"; // Assuming apiService is used for API calls
+import { useAuth } from "../../auth/services/AuthContext";
+import { apiService } from "../../../services/api"; // Assuming apiService is used for API calls
 import {
   CheckCircleIcon,
   XCircleIcon,
