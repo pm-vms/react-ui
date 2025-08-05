@@ -93,7 +93,7 @@ import {
   Snowflake,
   TrendingDown,
 } from "lucide-react";
-import apiService from "../services/api";
+import { apiService } from "../../../services/api";
 
 type MainSection =
   | "overview"
@@ -1856,7 +1856,7 @@ const HistoryInterface = ({
                   • Combine Message 1's personalization with Message 2's urgency
                 </li>
                 <li>
-                  • Optimal send time appears to be Tuesday afternoon based on
+                  �� Optimal send time appears to be Tuesday afternoon based on
                   open rates
                 </li>
               </ul>
