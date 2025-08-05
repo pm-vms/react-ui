@@ -10,7 +10,7 @@ interface StatsCardProps {
   color?: 'blue' | 'green' | 'purple' | 'red' | 'yellow' | 'indigo' | 'pink';
 }
 
-export const StatsCard: React.FC<StatsCardProps> = ({
+const StatsCard: React.FC<StatsCardProps> = ({
   title,
   value,
   change,
