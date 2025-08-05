@@ -9,8 +9,8 @@ import {
   User,
   Save,
 } from "lucide-react";
-import { useAuth } from "../contexts/AuthContext";
-import { apiService } from "../services/api";
+import { useAuth } from "../../auth/services/AuthContext";
+import { apiService } from "../../../services/api";
  
 const ProfilePage: React.FC = () => {
   const { user } = useAuth();
