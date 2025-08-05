@@ -1,0 +1,233 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === Layout Sanity Fixes === */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Consistent box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* === Custom Animations === */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    --background: 248 25% 99%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    --primary: 262 90% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 28% 96%;
+    --secondary-foreground: 215 25% 15%;
+
+    --muted: 215 28% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 217 32% 92%;
+    --accent-foreground: 215 25% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 215 28% 88%;
+    --input: 215 28% 88%;
+    --ring: 262 90% 50%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 248 25% 99%;
+    --sidebar-foreground: 215 25% 15%;
+    --sidebar-primary: 262 90% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217 32% 92%;
+    --sidebar-accent-foreground: 215 25% 15%;
+    --sidebar-border: 215 28% 88%;
+    --sidebar-ring: 262 90% 50%;
+
+    --ai-glow: 262 90% 50%;
+    --ai-glow-soft: 262 90% 85%;
+    --status-hot: 0 84% 60%;
+    --status-warm: 38 92% 50%;
+    --status-cold: 217 91% 60%;
+
+    --brand-50: 240 100% 97%;
+    --brand-100: 240 100% 94%;
+    --brand-200: 240 100% 86%;
+    --brand-300: 240 100% 77%;
+    --brand-400: 240 100% 68%;
+    --brand-500: 240 100% 60%;
+    --brand-600: 240 100% 50%;
+    --brand-700: 240 100% 40%;
+    --brand-800: 240 100% 32%;
+    --brand-900: 240 100% 24%;
+    --brand-950: 240 100% 15%;
+  }
+
+  .dark {
+    --background: 215 28% 6%;
+    --foreground: 213 31% 91%;
+
+    --card: 215 25% 9%;
+    --card-foreground: 213 31% 91%;
+
+    --popover: 215 25% 9%;
+    --popover-foreground: 213 31% 91%;
+
+    --primary: 262 90% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 25% 12%;
+    --secondary-foreground: 213 31% 91%;
+
+    --muted: 215 25% 12%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 215 25% 15%;
+    --accent-foreground: 213 31% 91%;
+
+    --destructive: 0 62% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 215 25% 18%;
+    --input: 215 25% 18%;
+    --ring: 262 90% 50%;
+
+    --sidebar-background: 215 28% 6%;
+    --sidebar-foreground: 213 31% 91%;
+    --sidebar-primary: 262 90% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 25% 15%;
+    --sidebar-accent-foreground: 213 31% 91%;
+    --sidebar-border: 215 25% 18%;
+    --sidebar-ring: 262 90% 50%;
+
+    --ai-glow: 262 90% 50%;
+    --ai-glow-soft: 262 90% 25%;
+    --status-hot: 0 84% 60%;
+    --status-warm: 38 92% 50%;
+    --status-cold: 217 91% 60%;
+
+    --brand-600: 240 100% 60%;
+    --brand-700: 240 100% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background-image: radial-gradient(
+        circle at 20% 80%,
+        rgba(120, 119, 198, 0.1) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 80% 20%,
+        rgba(255, 119, 198, 0.05) 0%,
+        transparent 50%
+      );
+  }
+}
+
+@layer utilities {
+  .ai-glow {
+    box-shadow: 0 0 20px hsl(var(--ai-glow) / 0.3),
+      0 0 40px hsl(var(--ai-glow) / 0.1);
+  }
+
+  .ai-gradient {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--ai-glow) / 0.1) 0%,
+      hsl(var(--ai-glow) / 0.05) 100%
+    );
+    border: 1px solid hsl(var(--ai-glow) / 0.2);
+  }
+
+  .glass-effect {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+  .dark .glass-effect {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+}
