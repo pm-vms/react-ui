@@ -12,7 +12,7 @@ import {
 import { useAuth } from "../contexts/AuthContext";
 import { apiService } from "../services/api";
  
-export const ProfilePage: React.FC = () => {
+const ProfilePage: React.FC = () => {
   const { user } = useAuth();
   const [isEditing, setIsEditing] = useState(false);
   const [avatarNameSeed, setAvatarNameSeed] = useState("User");
@@ -300,3 +300,4 @@ export const ProfilePage: React.FC = () => {
     </div>
   );
 };
+export default 1;
