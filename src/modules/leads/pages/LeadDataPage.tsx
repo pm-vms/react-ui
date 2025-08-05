@@ -1673,7 +1673,7 @@ const LeadDataPage: React.FC = () => {
                         <div className="flex flex-wrap gap-2">
                           {[
                             {
-                              label: "�� Today",
+                              label: "📅 Today",
                               value: "today",
                               filter: "dateRangeFilter",
                             },
@@ -2876,4 +2876,4 @@ const LeadDataPage: React.FC = () => {
     </div>
   );
 };
-export default 1;
+export default LeadDataPage;
