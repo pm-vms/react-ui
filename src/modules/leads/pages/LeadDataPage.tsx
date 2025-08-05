@@ -220,7 +220,7 @@ const DEFAULT_COLUMNS = {
   activity: { label: "Activity", visible: false, required: false },
 };
 
-export const LeadDataPage: React.FC = () => {
+const LeadDataPage: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [statusFilter, setStatusFilter] = useState<
     "all" | "active" | "contacted" | "converted"
@@ -2876,3 +2876,4 @@ export const LeadDataPage: React.FC = () => {
     </div>
   );
 };
+export default 1;

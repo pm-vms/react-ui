@@ -54,7 +54,7 @@ const historyData = [
   }
 ];
 
-export const HistoryPage: React.FC = () => {
+const HistoryPage: React.FC = () => {
   const [filter, setFilter] = useState<'all' | 'completed' | 'running' | 'failed'>('all');
 
   const filteredData = historyData.filter(item => 
@@ -237,3 +237,4 @@ export const HistoryPage: React.FC = () => {
     </div>
   );
 };
+export default 1;
