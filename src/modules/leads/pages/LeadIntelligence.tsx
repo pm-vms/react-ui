@@ -18,8 +18,8 @@ import { Input } from "../../../shared/components/input";
 import { Label } from "../../../shared/components/label";
 import { Progress } from "../../../shared/components/progress";
 import { Switch } from "../../../shared/components/switch";
-import { Checkbox } from "@/components/ui/checkbox";
-import { useToast } from "@/hooks/use-toast";
+import { Checkbox } from "../../../shared/components/checkbox";
+import { useToast } from "../../../shared/hooks/use-toast";
 import {
   Mail,
   MessageSquare,
