@@ -237,4 +237,4 @@ const HistoryPage: React.FC = () => {
     </div>
   );
 };
-export default 1;
+export default HistoryPage;
