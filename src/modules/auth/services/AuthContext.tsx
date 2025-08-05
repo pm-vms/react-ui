@@ -6,8 +6,8 @@ import React, {
   useCallback,
   useRef,
 } from "react";
-import { apiService } from "../services/api";
-import { User } from "../types";
+import { apiService } from "../../../services/api";
+import { User } from "../../../shared/utils/types";
 
 interface AuthContextType {
   user: User | null;
