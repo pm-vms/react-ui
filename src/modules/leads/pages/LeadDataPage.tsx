@@ -71,7 +71,7 @@ import {
   TabsTrigger,
 } from "../../../shared/components/tabs";
 import { Progress } from "../../../shared/components/progress";
-import { Checkbox } from "@/components/leadui/checkbox";
+import { Checkbox } from "../../../shared/components/checkbox";
 import {
   Tooltip,
   TooltipContent,
@@ -1673,7 +1673,7 @@ const LeadDataPage: React.FC = () => {
                         <div className="flex flex-wrap gap-2">
                           {[
                             {
-                              label: "📅 Today",
+                              label: "�� Today",
                               value: "today",
                               filter: "dateRangeFilter",
                             },
