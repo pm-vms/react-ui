@@ -472,3 +472,5 @@ const LinkedInSetupPage: React.FC = () => {
     </div>
   );
 };
+
+export default LinkedInSetupPage;
