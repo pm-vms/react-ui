@@ -4,7 +4,7 @@ import { StatsCard } from '../components/StatsCard';
 import { ActivityFeed } from '../components/ActivityFeed';
 import { QuickActions } from '../components/QuickActions';
 import { useNavigate } from 'react-router-dom';
-import { apiService } from '../services/api';
+import { apiService } from '../../../services/api';
 
 const defaultStats = [
   { title: 'Total Leads', value: '12,847', change: '+12%', changeType: 'increase' as const, icon: Users, color: 'blue' as const },
