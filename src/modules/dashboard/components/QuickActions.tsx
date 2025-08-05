@@ -7,7 +7,7 @@ interface QuickActionsProps {
   onViewAnalytics: () => void;
 }
 
-export const QuickActions: React.FC<QuickActionsProps> = ({
+const QuickActions: React.FC<QuickActionsProps> = ({
   onStartCampaign,
   onExportData,
   onViewAnalytics
@@ -120,4 +120,4 @@ export const QuickActions: React.FC<QuickActionsProps> = ({
       </div>
     </div>
   );
-};
+};export default QuickActions;
