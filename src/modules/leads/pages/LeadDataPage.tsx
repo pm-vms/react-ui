@@ -57,20 +57,20 @@ import {
   DropdownMenuTrigger,
   DropdownMenuSeparator,
   DropdownMenuCheckboxItem,
-} from "@/components/leadui/dropdown-menu";
+} from "../../../shared/components/dropdown-menu";
 import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
-} from "@/components/leadui/card";
+} from "../../../shared/components/card";
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@/components/leadui/tabs";
-import { Progress } from "@/components/leadui/progress";
+} from "../../../shared/components/tabs";
+import { Progress } from "../../../shared/components/progress";
 import { Checkbox } from "@/components/leadui/checkbox";
 import {
   Tooltip,
@@ -1688,7 +1688,7 @@ const LeadDataPage: React.FC = () => {
                               filter: "dateRangeFilter",
                             },
                             {
-                              label: "�� Overdue Follow-ups",
+                              label: "🔴 Overdue Follow-ups",
                               value: "overdue",
                               filter: "followUpDueFilter",
                             },
