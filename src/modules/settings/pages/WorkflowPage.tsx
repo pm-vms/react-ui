@@ -302,4 +302,4 @@ const WorkflowPage: React.FC = () => {
     </div>
   );
 };
-export default 1;
+export default WorkflowPage;
