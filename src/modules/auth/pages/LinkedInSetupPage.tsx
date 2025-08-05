@@ -14,8 +14,8 @@ import {
   Eye,
   EyeOff,
 } from "lucide-react";
-import { apiService } from "../services/api";
-import { useAuth } from "../contexts/AuthContext";
+import { apiService } from "../../../services/api";
+import { useAuth } from "../services/AuthContext";
 
 const LinkedInSetupPage: React.FC = () => {
   const [cookie, setCookie] = useState("");
