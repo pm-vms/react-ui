@@ -6,6 +6,9 @@ export interface User {
   avatar?: string;
   role: string;
   createdAt: string;
+  permission?: {
+    canAccessDashboard: boolean;
+  };
 }
 
 export interface Lead {
