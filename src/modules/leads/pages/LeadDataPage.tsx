@@ -32,9 +32,9 @@ import {
   AlertCircle,
   Check,
 } from "lucide-react";
-import { Button } from "@/components/leadui/button";
-import { Input } from "@/components/leadui/input";
-import { Badge as BadgeComponent } from "@/components/leadui/badge";
+import { Button } from "../../../shared/components/button";
+import { Input } from "../../../shared/components/input";
+import { Badge as BadgeComponent } from "../../../shared/components/badge";
 import {
   Select,
   SelectContent,
