@@ -41,7 +41,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/leadui/select";
+} from "../../../shared/components/select";
 import {
   Dialog,
   DialogContent,
