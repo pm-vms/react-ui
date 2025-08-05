@@ -1,11 +1,17 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import { ProtectedRoute, LoginPage, LinkedInSetupPage } from "../modules/auth";
-import { DashboardPage } from "../modules/dashboard";
-import { LeadFiltersPage, HistoryPage, LeadDataPage, LeadIntelligence } from "../modules/leads";
-import { WorkflowPage, SettingsPage } from "../modules/settings";
-import { ProfilePage } from "../modules/profile";
-import { DashboardLayout } from "../layout/DashboardLayout";
+import ProtectedRoute from "../modules/auth/components/ProtectedRoute";
+import LoginPage from "../modules/auth/pages/LoginPage";
+import LinkedInSetupPage from "../modules/auth/pages/LinkedInSetupPage";
+import DashboardPage from "../modules/dashboard/pages/DashboardPage";
+import LeadFiltersPage from "../modules/leads/pages/LeadFiltersPage";
+import HistoryPage from "../modules/leads/pages/HistoryPage";
+import LeadDataPage from "../modules/leads/pages/LeadDataPage";
+import LeadIntelligence from "../modules/leads/pages/LeadIntelligence";
+import WorkflowPage from "../modules/settings/pages/WorkflowPage";
+import SettingsPage from "../modules/settings/pages/SettingsPage";
+import ProfilePage from "../modules/profile/pages/ProfilePage";
+import DashboardLayout from "../layout/DashboardLayout";
 
 export const AppRoutes: React.FC = () => {
   return (
