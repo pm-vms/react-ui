@@ -4,16 +4,16 @@ import { Card, CardContent, CardHeader, CardTitle } from "../../../shared/compon
 import { Badge } from "../../../shared/components/badge";
 import { Button } from "../../../shared/components/button";
 import { Avatar, AvatarFallback, AvatarImage } from "../../../shared/components/avatar";
-import { Separator } from "@/components/ui/separator";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Separator } from "../../../shared/components/separator";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../../shared/components/tabs";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
-import { Textarea } from "@/components/ui/textarea";
+} from "../../../shared/components/select";
+import { Textarea } from "../../../shared/components/textarea";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Progress } from "@/components/ui/progress";
