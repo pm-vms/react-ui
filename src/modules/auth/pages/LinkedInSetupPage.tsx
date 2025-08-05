@@ -17,7 +17,7 @@ import {
 import { apiService } from "../services/api";
 import { useAuth } from "../contexts/AuthContext";
 
-export const LinkedInSetupPage: React.FC = () => {
+const LinkedInSetupPage: React.FC = () => {
   const [cookie, setCookie] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
